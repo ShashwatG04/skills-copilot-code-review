@@ -73,6 +73,63 @@ header h2 {
   font-size: 1.2rem;
 }
 
+/* Announcement Banner Styles */
+.announcement-banner {
+  background-color: var(--info-light);
+  border: 1px solid var(--info);
+  border-radius: 5px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.banner-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.banner-text {
+  flex: 1;
+  color: var(--info);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.close-banner {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--info);
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.close-banner:hover {
+  background-color: rgba(12, 84, 96, 0.1);
+}
+
+.announcement-banner.hidden {
+  display: none;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
